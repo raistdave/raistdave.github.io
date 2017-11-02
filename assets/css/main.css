@@ -1,0 +1,296 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Quicksand");
+@import url("font-awesome.min.css");
+@import url("et-line-font.css");
+@import url("bootstrap.min.css");
+@import url("animate.css");
+@import url("timeline.css");
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: 'Open Sans', Helvetica, sans-serif !important;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+a,
+.navbar-default .navbar-nav > li > a,
+#nav-social i:hover:before {
+    text-decoration: none;
+    -moz-transition: all 0.5s ease-out;
+    -ms-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+
+a {
+    color: black;
+}
+
+.navbar-default .navbar-nav > li > a,
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+#nav-social li a,
+#nav-social li a:focus {
+    color: #E09F55;
+}
+
+a:hover,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > .active > a:hover,
+#nav-social li a:hover,
+a.btn-default:hover {
+    color: #FFDEB8;
+}
+
+a.btn-default:hover {
+    border-color: #FFDEB8;
+    background: transparent;
+}
+
+.navbar-default .navbar-header .navbar-brand {
+    color: #E09F55;
+    text-transform: uppercase;
+}
+
+.navbar-default .navbar-nav > li {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.navbar-default .navbar-nav > li > a {
+    padding-bottom: 8px;
+}
+
+ol, ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#main-header {
+    width: 100%;
+    min-height: 100%;
+    padding-top: 50px;
+}
+
+#main-header {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../images/bg_op_dark.jpg');
+    color: white;
+}
+
+#main-header h1 {'
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+#main-header p {
+    font-family: 'Quicksand';
+    font-size: 25px;
+}
+
+.title-separator {
+    border-color: #E09F55;
+    border-width: 4px;
+    max-width: 60px;
+}
+
+.bg-primary .title-separator {
+    border-color: white;
+}
+
+.header-content {
+    width: 100%;
+    position:absolute;
+    top: 25%;
+}
+
+.bg-primary {
+    background-color: #E09F55;
+}
+
+.btn-default {
+    color: #E09F55;
+    border-color: #E09F55;
+}
+
+section {
+    width: 100%;
+    padding: 50px 0px;
+}
+
+.section-heading {
+    text-transform: uppercase;
+    border-bottom: 4px solid #E09F55;
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+}
+
+.image-8i {
+    position: relative;
+    margin-top: -30em;
+    height: 3em;
+    width: auto;
+}
+
+.image-udem {
+    position: relative;
+    margin-top: -30.5em;
+    margin-left: -1.5em;
+    height: 4em;
+    width: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 1s ease;
+}
+
+.about-container:hover .overlay {
+    opacity: 1;
+    background: rgba(255, 255, 255, 0.7)
+}
+
+.jumbotron-icon .fa-6 {
+    font-size: 20em;
+}
+
+.about-text {
+    color: black;
+    font-size: 20px;
+    position: absolute;
+    top: -10%;
+    left: 5%;
+}
+
+.progress {
+    height: 45px;
+    background-color: #E09F55;
+    border-color: white;
+    border-style: solid;
+}
+
+.progress .skill {
+    line-height: 40px;
+    margin: 0 0 0 20px;
+    font-size: 18px;
+}
+
+.progress-bar {
+    text-align: left;
+    color: #E09F55;
+    transition-duration: 1.5s;
+    background-color: white;
+    box-shadow: none;
+}
+
+#nav-social li {
+    display: inline-block;
+    padding: 5px;
+}
+
+#nav-social i:before {
+    border-radius: 100%;
+    border: solid 1px #E09F55;
+    display: block;
+    line-height: 2em;
+    text-align: center;
+    width: 2em;
+}
+
+#nav-social i:hover:before {
+    border: solid 1px #FFDEB8;
+}
+
+.text-muted {
+    color: #616161;
+}
+
+@media (min-width: 768px) {
+    .navbar-default {
+        background-color: rgba(0, 0, 0, 0.2);
+        border-color: rgba(0, 0, 0, 0);
+    }
+
+    .navbar-default .navbar-nav {
+        padding: 0px 0;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -ms-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -o-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .navbar-default .navbar-header .navbar-brand {
+        color: white;
+    }
+
+    .navbar-default .navbar-nav > li > a,
+    .navbar-default .navbar-nav > li > a:focus,
+    .navbar-default .navbar-nav > .active > a,
+    .navbar-default .navbar-nav > .active > a:focus {
+        color: white;
+    }
+
+    .navbar-default .navbar-nav > .active > a,
+    .navbar-default .navbar-nav > .active > a:focus,
+    .navbar-default .navbar-nav > .active > a:hover {
+        background-color: transparent;
+        border-bottom: 3px solid;
+    }
+
+    .navbar-default.affix {
+        background-color: white;
+        box-shadow: 0 7px 16px 0 rgba(50, 50, 50, 0.1);
+        border-color: rgba(34, 34, 34, 0.05);
+    }
+
+    .navbar-default.affix .navbar-header .navbar-brand {
+        color: #E09F55;
+    }
+
+    .navbar-default.affix .navbar-header .navbar-brand:hover,
+    .navbar-default.affix .navbar-header .navbar-brand:focus {
+        color: #FFDEB8;
+    }
+
+    .navbar-default.affix .nav > li > a,
+    .navbar-default.affix .nav > li > a:focus {
+        color: #E09F55;
+    }
+
+    .navbar-default.affix .nav > li > a:hover,
+    .navbar-default.affix .nav > li > a:focus:hover {
+        color: #FFDEB8;
+    }
+
+    #main-header h1 {
+        font-size: 75px;
+    }
+
+    .header-content-inner {
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

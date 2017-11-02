@@ -1,0 +1,73 @@
+.bg-primary .timeline-badge {
+    background-color: white;
+    color: #E09F55;
+}
+
+@media (min-width: 768px) {
+    .timeline {
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .timeline:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 4px;
+        background: #E6E6E6;
+        left: 50%;
+        margin-left: -1.7px;
+    }
+
+    .timeline > li {
+        position: relative;
+        margin-top: 35px;
+    }
+
+    .timeline > li:before,
+    .timeline > li:after {
+        content: " ";
+        display: table;
+    }
+
+    .timeline > li:after {
+        clear: both;
+    }
+
+    .timeline > li > .timeline-badge {
+        height: 30px;
+        width: 30px;
+        background-color: #E09F55;
+        color: white;
+        -ms-transform: rotate(45deg); /* Internet Explorer */
+        -moz-transform: rotate(45deg); /* Firefox */
+        -webkit-transform: rotate(45deg); /* Safari et Chrome */
+        -o-transform: rotate(45deg); /* Opera */
+        position: absolute;
+        margin-left: 48.3%;
+    }
+
+    .timeline > li > .timeline-badge .fa {
+        -ms-transform: rotate(-45deg); /* Internet Explorer */
+        -moz-transform: rotate(-45deg); /* Firefox */
+        -webkit-transform: rotate(-45deg); /* Safari et Chrome */
+        -o-transform: rotate(-45deg); /* Opera */
+        position: absolute;
+        margin-top: 26%;
+        margin-left: 23%;
+    }
+
+    .timeline > li > .timeline-panel {
+        width: 45%;
+        position: relative;
+        float: left;
+        text-align: right;
+    }
+
+    .timeline > li.timeline-inverted > .timeline-panel {
+        float: right;
+        text-align: left;
+    }
+}
