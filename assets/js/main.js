@@ -17,10 +17,6 @@ $(function()
         }
     });
 
-    $(document).on('scroll', function (e) {
-        $('.navbar-default').css('opacity', ($(document).scrollTop() / 500));
-    });
-
     $('.progress .progress-bar').css("width",
         function() {
             return $(this).attr("aria-valuenow") + "%";
