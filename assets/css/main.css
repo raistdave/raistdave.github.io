@@ -212,6 +212,21 @@ footer {
     text-transform: uppercase;
 }
 
+.tags li {
+    background-color: #3590CC;
+    border-radius: 20px;
+    color: white;
+    cursor: default;
+    display: inline-block;
+    margin-bottom: 5px;
+    padding: 5px 15px;
+}
+
+.tags li:hover {
+    background-color: #CCCCCC;
+    color: #3590CC;
+}
+
 @media (min-width: 768px) {
     .navbar-default {
         background-color: transparent;
