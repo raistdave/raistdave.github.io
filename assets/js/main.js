@@ -17,11 +17,13 @@ $(function()
         }
     });
 
-    $('.progress .progress-bar').css("width",
-        function() {
+	$(document).on('scroll', function (e) {
+		$('.navbar-default').css('opacity', (0.4 + $(document).scrollTop() / 800));
+	});
+	
+    $('.progress .progress-bar').css("width", function() {
             return $(this).attr("aria-valuenow") + "%";
-        }
-    );
+	});
 
     new WOW().init();
 });
