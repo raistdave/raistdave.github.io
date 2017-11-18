@@ -43,6 +43,7 @@ $(function()
 		
 	});
 	
+	document.dispatchEvent(new Event('scroll'));
 	window.dispatchEvent(new Event('resize'));
     new WOW().init();
 });
