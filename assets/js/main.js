@@ -18,7 +18,7 @@ $(function()
     });
 
 	$(document).on('scroll', function (e) {
-		if($(document).scrollTop() == 0)
+		if($(document).scrollTop() <= 10)
 		{
 			$('.navbar-default').css('opacity', 100);
 			$('.navbar-default').css('background-color', 'transparent');
