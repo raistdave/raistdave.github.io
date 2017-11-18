@@ -18,12 +18,31 @@ $(function()
     });
 
 	$(document).on('scroll', function (e) {
-		$('.navbar-default').css('opacity', (0.4 + $(document).scrollTop() / 800));
+		if($(document).scrollTop() == 0)
+		{
+			$('.navbar-default').css('opacity', 100);
+			$('.navbar-default').css('background-color', 'transparent');
+		}
+		else
+		{
+			$('.navbar-default').css('opacity', ($(document).scrollTop() / 800));
+			$('.navbar-default').css('background-color', '#333');
+		}
 	});
 	
     $('.progress .progress-bar').css("width", function() {
             return $(this).attr("aria-valuenow") + "%";
 	});
+	
 
+	$(window).on('resize', function(){ 
+		if ($('#skills-list').width() > 340)
+			$('#skills-list').css('font-size', $('#skills-list').width() + "px");
+		else
+			$('#skills-list').css('font-size', $('#skills-list').width() + 120 + "px");
+		
+	});
+	
+	window.dispatchEvent(new Event('resize'));
     new WOW().init();
 });

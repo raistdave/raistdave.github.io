@@ -57,7 +57,6 @@ a.btn-default:hover {
     background-color: #333;
     border-color: rgba(34, 34, 34, 0.05);
     box-shadow: 0 7px 16px 0 rgba(50, 50, 50, 0.1);
-	opacity: 0.4;
 }
 
 .navbar-default .navbar-header .navbar-brand {
@@ -166,6 +165,11 @@ footer {
 .progress {
     background-color: #CCCCCC;
     height: 5px !important;
+	margin-bottom: 10px;
+}
+
+#skills-list {
+	margin-bottom: 20px;
 }
 
 .progress-bar {
@@ -229,6 +233,15 @@ footer {
 }
 
 @media (min-width: 768px) {
+	
+	.navbar-default {
+        background-color: transparent;
+    }
+
+    .navbar-default.affix {
+		background-color: #333;
+	}
+	
     .navbar-default .navbar-nav > .active > a,
     .navbar-default .navbar-nav > .active > a:focus,
     .navbar-default .navbar-nav > .active > a:hover {
