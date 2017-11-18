@@ -16,18 +16,30 @@ $(function()
             top: 200
         }
     });
-
-	$(document).on('scroll', function (e) {
-		if($(document).scrollTop() <= 10)
+	
+	function setMenu()
+	{
+		if($(document).width() < 755)
 		{
 			$('.navbar-default').css('opacity', 100);
-			$('.navbar-default').css('background-color', 'transparent');
-		}
-		else
-		{
-			$('.navbar-default').css('opacity', ($(document).scrollTop() / 800));
 			$('.navbar-default').css('background-color', '#333');
 		}
+		else {
+			if($(document).scrollTop() <= 10)
+			{
+				$('.navbar-default').css('opacity', 100);
+				$('.navbar-default').css('background-color', 'transparent');
+			}
+			else
+			{
+				$('.navbar-default').css('opacity', ($(document).scrollTop() / 500));
+				$('.navbar-default').css('background-color', '#333');
+			}
+		}
+	}
+
+	$(document).on('scroll', function (e) {
+		setMenu();
 	});
 	
     $('.progress .progress-bar').css("width", function() {
@@ -36,6 +48,7 @@ $(function()
 	
 
 	$(window).on('resize', function(){ 
+		setMenu();
 		if ($('#skills-list').width() > 340)
 			$('#skills-list').css('font-size', $('#skills-list').width() + "px");
 		else
@@ -43,7 +56,7 @@ $(function()
 		
 	});
 	
-	document.dispatchEvent(new Event('scroll'));
+	setMenu();
 	window.dispatchEvent(new Event('resize'));
     new WOW().init();
 });
